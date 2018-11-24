@@ -26,6 +26,9 @@ before_script:
 # script (main execution)
 script:
   - ./vendor/bin/phpunit
-  
+
 # setelah main execution selesai
-after_success:
+deploy:
+  provider: heroku
+  api_key: 
+    secure: "27bc6124-10bd-4d2e-aa01-39c450567e01"
